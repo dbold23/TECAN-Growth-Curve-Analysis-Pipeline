@@ -256,6 +256,7 @@ def test_ledger_commands_name_paths_that_exist():
     assert blocks, "the ledger states no runnable command"
 
     generated_prefixes = ("synthetic_data/output/comprehensive_test/validation",
+                          "synthetic_data/output/comprehensive_test/training_features",
                           "results/", "models/", "/tmp")
     missing = []
     for block in blocks:

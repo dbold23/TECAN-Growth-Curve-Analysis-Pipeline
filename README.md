@@ -213,3 +213,9 @@ commit, package versions and input checksums.
 Developed for BIO380 (Pesticide-Bioremediating Bacteria), CSU Monterey Bay.
 Detailed background on the batch pipeline: [PIPELINE_METHODOLOGY.md](PIPELINE_METHODOLOGY.md)
 and [scripts/README.md](scripts/README.md).
+
+## License and citation
+
+Released under the [MIT License](LICENSE). If you use the software, cite it
+with the metadata in [CITATION.cff](CITATION.cff) (GitHub's "Cite this
+repository" button reads it).
