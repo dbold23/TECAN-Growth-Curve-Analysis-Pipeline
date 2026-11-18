@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "TECAN Growth Curve Analysis Pipeline"
+type: software
+abstract: >-
+  Turns a TECAN Spark plate-reader export into modified-Gompertz growth
+  parameters (A, mu, lambda, doubling time) with explicit GOOD/BAD quality
+  gates, a Streamlit lab interface and a scripted batch pipeline.
+repository-code: "https://github.com/dbold23/TECAN-Growth-Curve-Analysis-Pipeline"
+license: MIT
+# Author list and order are provisional; confirm before tagging a release.
+authors:
+  - family-names: Sambold
+    given-names: Daniel
+    affiliation: "California State University, Monterey Bay"
+  - family-names: Snook
+    given-names: Mary
+    affiliation: "California State University, Monterey Bay"
+  - family-names: Walton
+    given-names: Nate
+    affiliation: "California State University, Monterey Bay"
+  - family-names: Scott
+    given-names: Dominique
+    affiliation: "California State University, Monterey Bay"
+  - family-names: Jue
+    given-names: Nathaniel
+    affiliation: "California State University, Monterey Bay"
+# No DOI yet: add `doi:` after the Zenodo archive is minted for the release.

@@ -472,6 +472,11 @@ def test_committed_report_matches_committed_results(report_v2, rescored):
                 continue
             if isinstance(value, float):
                 assert round(value, 6) == round(fresh[key], 6), f'{block}.{key}'
+            elif isinstance(value, str) and key.endswith('_source'):
+                # Provenance paths were recorded on the machine that built the
+                # report; compare the file, not the checkout location.
+                assert (value.replace('\\', '/').rsplit('/', 1)[-1]
+                        == fresh[key].replace('\\', '/').rsplit('/', 1)[-1]), f'{block}.{key}'
             elif isinstance(value, (int, bool, str)):
                 assert value == fresh[key], f'{block}.{key}'
 
